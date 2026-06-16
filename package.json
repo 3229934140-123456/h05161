@@ -1,0 +1,21 @@
+{
+  "name": "mini-bundler",
+  "version": "1.0.0",
+  "description": "A lightweight static resource bundler similar to webpack",
+  "main": "src/index.js",
+  "bin": {
+    "mini-bundler": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node tests/run.js",
+    "build-example": "node src/cli.js build --entry example/src/index.js --output-dir example/dist"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0",
+    "@babel/generator": "^7.23.0",
+    "@babel/types": "^7.23.0",
+    "magic-string": "^0.30.5",
+    "source-map": "^0.7.4"
+  }
+}
